@@ -36,6 +36,14 @@ def _ig(h, t, f, c, ohc, oc, oh, oe, e=_FEED):
     return _IG.format(h=h, t=t, f=f, c=c, e=e, ohc=ohc, oc=oc, oh=oh, oe=oe)
 
 
+# Hero background: a free Unsplash photo (not one of Danny's jobs, so it carries
+# a credit). TODO: swap for a high-res original of Danny's best exterior job.
+HERO_PHOTO = {
+    "base": "https://images.unsplash.com/photo-1761418022097-621b807bea0f",
+    "credit": "Zach Miller",
+    "credit_url": "https://unsplash.com/photos/white-stucco-house-with-palm-trees-and-garden-Eek1JU-RFRw",
+}
+
 PHOTOS = {
     "wash_building": _ig("iad3-1", "82787", "620842289_18072094592431086_1564420114232372082", 110, "7IkjqHspVP8Q7kNvwGEZam8", "AdqWD0wEQWcVQyAx_bqk6Nfo5QI-Zwvi5HNQMMVVa2HA1JzYwHx2XBwKo8H1CeAsyrM", "00_AQMg435s1RQbdXoQRPvGg5Ux9dKykxGmh8Y3axbnzyBUpQ", "6AE1C89C"),
     "pink_arches": _ig("iad3-1", "82787", "629986490_18401548876179447_6934859445813364079", 101, "VLNdU-fp0D0Q7kNvwFaFRpj", "AdpZVkDRK-8Aeb8ieZpYVljpi4dniZcc9qzHOUGA3xIuKYu5bCspJi2U9DSIMkyrR0Y", "00_AQMCdMA68NDqn9ByresjT0ojAlRAfpE4GUas23fNe_Tazg", "6AE1BF32"),
@@ -91,6 +99,9 @@ T = {
         "menu": "Menu",
         "home_title": "House Painter in Hialeah, FL | Barba's Painting & Services",
         "home_desc": "Interior and exterior house painting, fences, stucco, drywall, pressure cleaning and waterproofing in Hialeah, FL. Rated 5.0 on Google. Free estimates.",
+        "hero_line": "House painting and repairs in Hialeah, Florida. Prepared properly, finished on time.",
+        "hero_alt": "White stucco house with green window frames under palm trees",
+        "photo_credit": "Photo",
         "hero_h1": "Exceptional painting, prepared to last.",
         "hero_sub": "Danny Lopez and his team repaint Hialeah homes with the prep most painters skip: cleaning, crack repair and primer before any color goes on.",
         "hero_rating": "Rated 5.0 by 14 customers on Google",
@@ -205,6 +216,9 @@ T = {
         "menu": "Menú",
         "home_title": "Pintor de Casas en Hialeah, FL | Barba's Painting & Services",
         "home_desc": "Pintura de casas por dentro y por fuera, cercas, stucco, drywall, limpieza a presión e impermeabilización en Hialeah, FL. 5.0 en Google. Estimados gratis.",
+        "hero_line": "Pintura y reparaciones de casas en Hialeah, Florida. Bien preparadas y terminadas a tiempo.",
+        "hero_alt": "Casa blanca de stucco con marcos de ventanas verdes bajo palmas",
+        "photo_credit": "Foto",
         "hero_h1": "Pintura excepcional, preparada para durar.",
         "hero_sub": "Danny Lopez y su equipo pintan casas en Hialeah con la preparación que muchos pintores se saltan: limpieza, reparación de grietas y primer antes de aplicar el color.",
         "hero_rating": "Calificación 5.0 de 14 clientes en Google",

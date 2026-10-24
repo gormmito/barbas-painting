@@ -179,6 +179,93 @@ p { margin: 0 0 1em; max-width: 62ch; }
   .brand-badge { display: none; }
 }
 
+/* ---------- Masthead: business name over a home ---------- */
+.btn-light { background: #fff; color: var(--green); }
+.btn-light:hover { background: var(--stone); color: var(--green); }
+.btn-outline-light { border-color: rgba(255, 255, 255, .75); color: #fff; }
+.btn-outline-light:hover { background: #fff; color: var(--green); }
+
+.masthead {
+  position: relative; isolation: isolate; overflow: hidden;
+  min-height: min(92svh, 58rem); display: flex; align-items: flex-end;
+  margin-top: calc(-1 * var(--header-h));      /* sits under the floating header */
+  padding: calc(var(--header-h) + 3rem) 0 clamp(3rem, 7vw, 5.5rem);
+  background: var(--green); color: #fff;
+}
+.masthead-photo {
+  position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%;
+  object-fit: cover; object-position: 62% 40%;
+}
+/* Deep green rising from the lower left keeps white type readable without
+   flattening the photo; a light veil at the top seats the header. */
+.masthead-shade {
+  position: absolute; inset: 0; z-index: -1;
+  background:
+    linear-gradient(180deg, rgba(14, 30, 22, .55) 0%, rgba(14, 30, 22, 0) 22%),
+    linear-gradient(20deg, rgba(17, 38, 28, .94) 0%, rgba(17, 38, 28, .76) 36%, rgba(17, 38, 28, .18) 70%, rgba(17, 38, 28, 0) 100%);
+}
+.masthead-inner { width: 100%; }
+.masthead .stroke { width: 5.5rem; height: .8rem; margin-bottom: 1.5rem; }
+.masthead-name { margin: 0 0 1.25rem; color: #fff; line-height: 1; letter-spacing: -.02em; }
+.mn-main { display: block; font-size: clamp(4.25rem, 12vw, 10.5rem); line-height: .9; }
+.mn-sub {
+  display: block; margin-top: .5rem; font-size: clamp(1.5rem, 3.4vw, 2.9rem); letter-spacing: -.005em;
+  color: rgba(255, 255, 255, .92);
+}
+.masthead-line { font-size: clamp(1.05rem, 1.5vw, 1.2rem); line-height: 1.55; color: rgba(255, 255, 255, .9); max-width: 30rem; }
+.masthead-actions { display: flex; flex-wrap: wrap; gap: .75rem; margin: 2rem 0 1.75rem; }
+.masthead-rating { display: inline-flex; align-items: center; gap: .65rem; min-height: 2.75rem; color: #fff; font-weight: 500; text-decoration: none; }
+.masthead-rating:hover span { text-decoration: underline; }
+.masthead-rating .stars { fill: #d9bd84; }
+.masthead-credit {
+  position: absolute; right: var(--gutter); bottom: 1rem;
+  font-size: .75rem; color: rgba(255, 255, 255, .72); text-decoration: none;
+}
+.masthead-credit:hover { color: #fff; text-decoration: underline; }
+@media (max-width: 560px) {
+  .masthead { min-height: 92svh; padding-bottom: 3.25rem; }
+  .masthead-photo { object-position: 58% 20%; }
+  /* The text covers the lower two thirds here, so the shade is strong only
+     behind it and the house stays clear above. */
+  .masthead-shade {
+    background:
+      linear-gradient(180deg, rgba(14, 30, 22, .5) 0%, rgba(14, 30, 22, 0) 14%),
+      linear-gradient(0deg, rgba(17, 38, 28, .94) 0%, rgba(17, 38, 28, .82) 30%, rgba(17, 38, 28, .5) 52%, rgba(17, 38, 28, 0) 72%);
+  }
+  .mn-main { font-size: clamp(3.75rem, 19vw, 5rem); }
+  .masthead-line { font-size: 1rem; }
+  .masthead-actions { margin: 1.5rem 0 1.25rem; }
+  .masthead-actions { flex-direction: column; }
+  .masthead-actions .btn { width: 100%; }
+  .masthead-credit { right: auto; left: var(--gutter); bottom: .75rem; }
+}
+/* The one orchestrated moment: the photo settles in as the name rises. */
+@media (prefers-reduced-motion: no-preference) {
+  .masthead-photo { animation: settle 2.4s var(--ease) both; }
+  .masthead-inner > * { animation: rise 1s var(--ease) both; }
+  .masthead-inner > :nth-child(2) { animation-delay: .1s; }
+  .masthead-inner > :nth-child(3) { animation-delay: .2s; }
+  .masthead-inner > :nth-child(4) { animation-delay: .28s; }
+  .masthead-inner > :nth-child(5) { animation-delay: .34s; }
+}
+@keyframes settle { from { transform: scale(1.06); } }
+
+/* Floating header on the home page: clear over the photo, solid once scrolled. */
+.site-header.is-overlay:not(.is-solid) {
+  background: transparent; backdrop-filter: none; border-bottom-color: rgba(255, 255, 255, .18);
+}
+.site-header.is-overlay:not(.is-solid) .brand,
+.site-header.is-overlay:not(.is-solid) .site-nav a:not(.btn),
+.site-header.is-overlay:not(.is-solid) .menu-btn { color: #fff; }
+.site-header.is-overlay:not(.is-solid) .brand-sub { color: rgba(255, 255, 255, .8); }
+.site-header.is-overlay:not(.is-solid) .brand-badge { border-color: rgba(255, 255, 255, .5); }
+.site-header.is-overlay:not(.is-solid) .menu-btn { border-color: rgba(255, 255, 255, .8); }
+.site-header.is-overlay:not(.is-solid) .lang-switch { border-color: rgba(255, 255, 255, .4); }
+.site-header.is-overlay:not(.is-solid) .lang-switch a { color: rgba(255, 255, 255, .85); }
+.site-header.is-overlay:not(.is-solid) .lang-switch a[aria-current="true"] { background: #fff; color: var(--green); }
+.site-header.is-overlay:not(.is-solid) .header-call { background: #fff; color: var(--green); }
+.site-header.is-overlay { transition: background-color .25s var(--ease), border-color .25s var(--ease); }
+
 /* ---------- Hero ---------- */
 .hero { padding: clamp(2rem, 7vw, 6rem) 0 clamp(2.5rem, 6vw, 5rem); }
 .hero-grid {
@@ -205,7 +292,7 @@ p { margin: 0 0 1em; max-width: 62ch; }
 /* Credentials line: real, verifiable facts only. */
 .creds {
   display: flex; align-items: center; gap: 1rem 2rem; flex-wrap: wrap;
-  margin-top: clamp(2.5rem, 6vw, 4.5rem); padding: 1.4rem 0;
+  margin-top: 0; padding: 1.4rem 0; border-top: 0;
   border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
   color: var(--ink); text-decoration: none;
 }
@@ -482,13 +569,6 @@ p { margin: 0 0 1em; max-width: 62ch; }
   body.menu-open .call-bar { display: none; }
 }
 
-/* The one orchestrated moment: the hero copy settles in while the
-   slider sweeps from before to after (see site.js). */
-@media (prefers-reduced-motion: no-preference) {
-  .hero-copy > * { animation: rise .9s var(--ease) both; }
-  .hero-copy > :nth-child(2) { animation-delay: .08s; }
-  .hero-copy > :nth-child(3) { animation-delay: .16s; }
-}
 /* Movement only, no fade, so the text is readable even if the animation never runs. */
 @keyframes rise { from { transform: translateY(14px); } }
 @media (prefers-reduced-motion: reduce) {

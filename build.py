@@ -8,7 +8,7 @@ import shutil
 from html import escape
 from pathlib import Path
 
-from content import (BUSINESS, GALLERY, HOME_GALLERY_COUNT, PHOTO_ALT, PHOTOS, REVIEW_LINKS,
+from content import (BUSINESS, GALLERY, HERO_PHOTO, HOME_GALLERY_COUNT, PHOTO_ALT, PHOTOS, REVIEW_LINKS,
                      REVIEWS, SERVICE_DATA, SERVICES, SITE_URL, T)
 
 ROOT = Path(__file__).parent
@@ -188,7 +188,9 @@ def header(lang, page):
     nav = "\n".join(
         f'      <a href="{url_page(lang, kind)}"{" aria-current=\"page\"" if kind == active else ""}>{t[label]}</a>'
         for kind, label in NAV)
-    return f"""<header class="site-header">
+    # On the home page the header floats over the photo masthead until you scroll.
+    overlay = " is-overlay" if page[0] == "home" else ""
+    return f"""<header class="site-header{overlay}">
   <div class="wrap header-row">
     <a class="brand" href="{url_home(lang)}" aria-label="{e(BUSINESS['name'])}">
       <img class="brand-badge" src="{e(BUSINESS['logo'])}" alt="" width="44" height="44" referrerpolicy="no-referrer">
@@ -434,25 +436,41 @@ def home(lang):
         <p>{e(p)}</p>
         <blockquote lang="en"><p>{e(q)}</p><footer>{e(who)}, Google</footer></blockquote>
       </div>""" for h, p, q, who in t["standards"])
-    body = f"""<section class="hero">
+    hp = HERO_PHOTO["base"]
+    srcset = ", ".join(f"{hp}?w={w}&q=78&auto=format&fit=crop {w}w" for w in (800, 1200, 1800, 2400))
+    body = f"""<section class="masthead" aria-label="{e(BUSINESS['name'])}">
+  <img class="masthead-photo" src="{hp}?w=1800&q=78&auto=format&fit=crop" srcset="{srcset}" sizes="100vw"
+       alt="{t['hero_alt']}" width="2400" height="1600" fetchpriority="high" decoding="async">
+  <div class="masthead-shade" aria-hidden="true"></div>
+  <div class="wrap masthead-inner">
+    {STROKE}
+    <h1 class="masthead-name"><span class="mn-main">Barba's</span> <span class="mn-sub">Painting &amp; Services</span></h1>
+    <p class="masthead-line">{t['hero_line']}</p>
+    <p class="masthead-actions">
+      <a class="btn btn-light btn-big" href="tel:{BUSINESS['phone_tel']}">{t['call']} {BUSINESS['phone_display']}</a>
+      <a class="btn btn-outline-light btn-big" href="{url_page(lang, 'work')}">{t['see_work']}</a>
+    </p>
+    <a class="masthead-rating" href="{url_page(lang, 'reviews')}">{STARS}<span>{t['hero_rating']}</span></a>
+  </div>
+  <a class="masthead-credit" href="{HERO_PHOTO['credit_url']}" rel="noopener">{t['photo_credit']}: {HERO_PHOTO['credit']} / Unsplash</a>
+</section>
+
+<div class="wrap">
+  <a class="creds" href="{url_page(lang, 'reviews')}">
+    {STARS}
+    <ul>
+{creds}
+    </ul>
+  </a>
+</div>
+
+<section class="hero" aria-labelledby="intro-h">
   <div class="wrap hero-grid">
     <div class="hero-copy">
-      <h1>{t['hero_h1']}</h1>
+      <h2 id="intro-h">{t['hero_h1']}</h2>
       <p class="hero-sub">{t['hero_sub']}</p>
-      <p class="hero-actions">
-        <a class="btn btn-call btn-big" href="tel:{BUSINESS['phone_tel']}">{t['call']} {BUSINESS['phone_display']}</a>
-        <a class="btn btn-ghost" href="{url_page(lang, 'work')}">{t['see_work']}</a>
-      </p>
     </div>
     {compare_slider(lang)}
-  </div>
-  <div class="wrap">
-    <a class="creds" href="{url_page(lang, 'reviews')}">
-      {STARS}
-      <ul>
-{creds}
-      </ul>
-    </a>
   </div>
 </section>
 
@@ -514,7 +532,13 @@ def home(lang):
 
 {faq_block(lang, t['home_faq'])}
 {contact_block(lang)}"""
-    return head(lang, page, t["home_title"], t["home_desc"], graph, PHOTOS["two_story"]) + header(lang, page) + body + footer(lang)
+    # Start fetching the masthead photo before the stylesheet finishes.
+    preload = f'<link rel="preload" as="image" imagesrcset="{srcset}" imagesizes="100vw" fetchpriority="high">\n'
+    top = head(lang, page, t["home_title"], t["home_desc"], graph, f"{hp}?w=1200&q=78&auto=format&fit=crop")
+    top = top.replace('<link rel="preconnect" href="https://fonts.googleapis.com">',
+                      '<link rel="preconnect" href="https://images.unsplash.com">\n' + preload
+                      + '<link rel="preconnect" href="https://fonts.googleapis.com">', 1)
+    return top + header(lang, page) + body + footer(lang)
 
 
 def services_index(lang):
