@@ -1,0 +1,27 @@
+# Barba's Painting & Services
+
+> House painting and repair company in Hialeah, Florida, run by Danny Lopez. Registered in Florida since 2019. Rated 5.0 from 14 Google reviews. Free estimates. English and Spanish.
+
+- Phone: (305) 555-0142
+- Email: BarbasPaintingLLC@gmail.com
+- Hours: Monday to Saturday, 8 am to 6 pm
+- Service area: Hialeah, FL
+
+## Services
+
+- [Exterior painting](https://barbas-painting.vercel.app/services/exterior-painting/): Full house exteriors, trim, doors and walls.
+- [Interior painting](https://barbas-painting.vercel.app/services/interior-painting/): Rooms, ceilings, trim and doors.
+- [Fence painting](https://barbas-painting.vercel.app/services/fence-painting/): Metal, wood and concrete fences and gates.
+- [Drywall repair](https://barbas-painting.vercel.app/services/drywall-repair/): Holes, cracks and water damage, patched and painted.
+- [Pressure cleaning](https://barbas-painting.vercel.app/services/pressure-cleaning/): Walls, roofs, driveways, pavers and pool decks.
+- [Stucco repair](https://barbas-painting.vercel.app/services/stucco-repair/): Cracks, chips and damaged stucco, patched to match.
+- [Waterproofing](https://barbas-painting.vercel.app/services/waterproofing/): Sealers and coatings for walls and roofs.
+
+## Pages
+
+- [Home](https://barbas-painting.vercel.app/)
+- [Services](https://barbas-painting.vercel.app/services/)
+- [Our work](https://barbas-painting.vercel.app/work/)
+- [Reviews](https://barbas-painting.vercel.app/reviews/)
+- [Contact](https://barbas-painting.vercel.app/contact/)
+- [Inicio en español](https://barbas-painting.vercel.app/es/)

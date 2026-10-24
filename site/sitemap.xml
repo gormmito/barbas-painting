@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://barbas-painting.vercel.app/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://barbas-painting.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://barbas-painting.vercel.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://barbas-painting.vercel.app/"/>
+  </url>
+  <url>
+    <loc>https://barbas-painting.vercel.app/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://barbas-painting.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://barbas-painting.vercel.app/es/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://barbas-painting.vercel.app/"/>
+  </url>
+  <url>
+    <loc>https://barbas-painting.vercel.app/services/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://barbas-painting.vercel.app/services/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://barbas-painting.vercel.app/es/servicios/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://barbas-painting.vercel.app/services/"/>
+  </url>
+  <url>
+    <loc>https://barbas-painting.vercel.app/es/servicios/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://barbas-painting.vercel.app/services/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://barbas-painting.vercel.app/es/servicios/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://barbas-painting.vercel.app/services/"/>
+  </url>
+  <url>
+    <loc>https://barbas-painting.vercel.app/work/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://barbas-painting.vercel.app/work/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://barbas-painting.vercel.app/es/trabajos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://barbas-painting.vercel.app/work/"/>
+  </url>
+  <url>
+    <loc>https://barbas-painting.vercel.app/es/trabajos/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://barbas-painting.vercel.app/work/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://barbas-painting.vercel.app/es/trabajos/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://barbas-painting.vercel.app/work/"/>
+  </url>
+  <url>
+    <loc>https://barbas-painting.vercel.app/reviews/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://barbas-painting.vercel.app/reviews/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://barbas-painting.vercel.app/es/resenas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://barbas-painting.vercel.app/reviews/"/>
+  </url>
+  <url>
+    <loc>https://barbas-painting.vercel.app/es/resenas/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://barbas-painting.vercel.app/reviews/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://barbas-painting.vercel.app/es/resenas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://barbas-painting.vercel.app/reviews/"/>
+  </url>
+  <url>
+    <loc>https://barbas-painting.vercel.app/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://barbas-painting.vercel.app/contact/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://barbas-painting.vercel.app/es/contacto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://barbas-painting.vercel.app/contact/"/>
+  </url>
+  <url>
+    <loc>https://barbas-painting.vercel.app/es/contacto/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://barbas-painting.vercel.app/contact/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://barbas-painting.vercel.app/es/contacto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://barbas-painting.vercel.app/contact/"/>
+  </url>
+  <url>
+    <loc>https://barbas-painting.vercel.app/services/exterior-painting/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://barbas-painting.vercel.app/services/exterior-painting/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://barbas-painting.vercel.app/es/servicios/pintura-exterior/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://barbas-painting.vercel.app/services/exterior-painting/"/>
+  </url>
+  <url>
+    <loc>https://barbas-painting.vercel.app/es/servicios/pintura-exterior/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://barbas-painting.vercel.app/services/exterior-painting/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://barbas-painting.vercel.app/es/servicios/pintura-exterior/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://barbas-painting.vercel.app/services/exterior-painting/"/>
+  </url>
+  <url>
+    <loc>https://barbas-painting.vercel.app/services/interior-painting/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://barbas-painting.vercel.app/services/interior-painting/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://barbas-painting.vercel.app/es/servicios/pintura-interior/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://barbas-painting.vercel.app/services/interior-painting/"/>
+  </url>
+  <url>
+    <loc>https://barbas-painting.vercel.app/es/servicios/pintura-interior/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://barbas-painting.vercel.app/services/interior-painting/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://barbas-painting.vercel.app/es/servicios/pintura-interior/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://barbas-painting.vercel.app/services/interior-painting/"/>
+  </url>
+  <url>
+    <loc>https://barbas-painting.vercel.app/services/fence-painting/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://barbas-painting.vercel.app/services/fence-painting/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://barbas-painting.vercel.app/es/servicios/pintura-de-cercas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://barbas-painting.vercel.app/services/fence-painting/"/>
+  </url>
+  <url>
+    <loc>https://barbas-painting.vercel.app/es/servicios/pintura-de-cercas/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://barbas-painting.vercel.app/services/fence-painting/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://barbas-painting.vercel.app/es/servicios/pintura-de-cercas/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://barbas-painting.vercel.app/services/fence-painting/"/>
+  </url>
+  <url>
+    <loc>https://barbas-painting.vercel.app/services/drywall-repair/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://barbas-painting.vercel.app/services/drywall-repair/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://barbas-painting.vercel.app/es/servicios/reparacion-de-drywall/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://barbas-painting.vercel.app/services/drywall-repair/"/>
+  </url>
+  <url>
+    <loc>https://barbas-painting.vercel.app/es/servicios/reparacion-de-drywall/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://barbas-painting.vercel.app/services/drywall-repair/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://barbas-painting.vercel.app/es/servicios/reparacion-de-drywall/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://barbas-painting.vercel.app/services/drywall-repair/"/>
+  </url>
+  <url>
+    <loc>https://barbas-painting.vercel.app/services/pressure-cleaning/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://barbas-painting.vercel.app/services/pressure-cleaning/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://barbas-painting.vercel.app/es/servicios/limpieza-a-presion/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://barbas-painting.vercel.app/services/pressure-cleaning/"/>
+  </url>
+  <url>
+    <loc>https://barbas-painting.vercel.app/es/servicios/limpieza-a-presion/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://barbas-painting.vercel.app/services/pressure-cleaning/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://barbas-painting.vercel.app/es/servicios/limpieza-a-presion/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://barbas-painting.vercel.app/services/pressure-cleaning/"/>
+  </url>
+  <url>
+    <loc>https://barbas-painting.vercel.app/services/stucco-repair/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://barbas-painting.vercel.app/services/stucco-repair/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://barbas-painting.vercel.app/es/servicios/reparacion-de-stucco/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://barbas-painting.vercel.app/services/stucco-repair/"/>
+  </url>
+  <url>
+    <loc>https://barbas-painting.vercel.app/es/servicios/reparacion-de-stucco/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://barbas-painting.vercel.app/services/stucco-repair/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://barbas-painting.vercel.app/es/servicios/reparacion-de-stucco/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://barbas-painting.vercel.app/services/stucco-repair/"/>
+  </url>
+  <url>
+    <loc>https://barbas-painting.vercel.app/services/waterproofing/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://barbas-painting.vercel.app/services/waterproofing/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://barbas-painting.vercel.app/es/servicios/impermeabilizacion/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://barbas-painting.vercel.app/services/waterproofing/"/>
+  </url>
+  <url>
+    <loc>https://barbas-painting.vercel.app/es/servicios/impermeabilizacion/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://barbas-painting.vercel.app/services/waterproofing/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://barbas-painting.vercel.app/es/servicios/impermeabilizacion/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://barbas-painting.vercel.app/services/waterproofing/"/>
+  </url>
+</urlset>
